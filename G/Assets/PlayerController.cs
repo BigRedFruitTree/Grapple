@@ -64,21 +64,8 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow) && isRight == true)
-        {
-            isRight = false;
-            Flip();
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow) && isRight == false)
-        {
-            isRight = true;
-            Flip();
-        }
-
         void Flip()
         {
-            isRight = !isRight;
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
