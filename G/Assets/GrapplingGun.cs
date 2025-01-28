@@ -29,7 +29,8 @@ public class GrapplingGun : MonoBehaviour
 
     public void StartGrapple() 
     {
-        //if(Physics2D.Raycast)
+        //https://www.youtube.com/watch?v=Gx46xUgVXrQ
+        //https://github.com/ThatOneUnityDev/HowToMakeAnyGameMechanic/blob/main/HowToMakeAnyGameMechanic/Assets/Episode%207%20-%20Grappling%20Hook/GrapplingHook.cs
     }
 
     public void StopGrapple() 

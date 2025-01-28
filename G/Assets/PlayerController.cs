@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public int jumpsMax = 2;
     public bool isGrounded = false;
     public bool isRight = true;
-
+    public GameObject spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -69,6 +69,14 @@ public class PlayerController : MonoBehaviour
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+        }
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+	{
+
+		if (collision.gameObject.tag == "Acid(have i seen this before?)")
+		{
+			transform.position = spawn.transform.position;
         }
     }
 }
